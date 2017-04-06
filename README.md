@@ -23,8 +23,13 @@ Dependencies
 
 A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
-Example Playbook
-----------------
+## Installation
+
+Install the role from [ansible galaxy](https://galaxy.ansible.com/hiteshjasani/procmem/)
+
+    % ansible-galaxy install hiteshjasani.procmem
+
+### Example Playbook
 
 To set up the script on the server, add the following to your playbook.  By default, the script will be
 installed in `/usr/local/bin`.
@@ -38,6 +43,8 @@ It can also be installed to a custom location.
     - hosts: servers
       roles:
          - { role: hiteshjasani.procmem, hiteshjasani_procmem_dest_dir: "/opt/local/bin" }
+
+### Usage
 
 After the script is installed, you can invoke it as follows from the command line:
 
@@ -57,4 +64,5 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Hitesh Jasani
+
