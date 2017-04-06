@@ -1,0 +1,3 @@
+---
+# defaults file for procmem
+hiteshjasani_procmem_dest_dir: "/usr/local/bin" # script install directory

@@ -1,0 +1,7 @@
+---
+# tasks file for procmem
+- name: Add procmem script
+  template:
+    src: procmem_sh.j2
+    dest: "{{ hiteshjasani_procmem_dest_dir }}/procmem.sh"
+    mode: 0755

@@ -1,0 +1,2 @@
+PROC=$1
+/bin/ps l -C $PROC | awk '{x += $8;y += 1} END {print (y-1)" processes using (MB): "x/1024; print "avg process size (MB): "x/((y-1)*1024)}'
